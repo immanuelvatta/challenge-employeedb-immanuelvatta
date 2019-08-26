@@ -43,7 +43,7 @@ VALUES(5, 60000, 'Beverly', 'Los Angeles', 'California');
 SELECT E.FirstName, E.LastName, D.Name 
 FROM Employee.Employee As E  INNER JOIN Department.Department AS D 
 ON E.Did = D.Did
-WHERE E.Did = 4;
+WHERE D.Name = 'Marketing';
 
 SELECT D.Name, ED.Salary
 FROM ((Employee.EmployeeDetails AS ED
